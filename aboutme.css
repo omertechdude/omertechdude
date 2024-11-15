@@ -1,0 +1,363 @@
+/* Universal styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Matrix Canvas Styling */
+#matrixCanvas {
+    position: fixed; /* Use fixed positioning to make it stay in place */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Full width */
+    height: 100%; /* Full height */
+    z-index: -1;  /* Ensure it's behind all other elements */
+    background-color: black; /* Optional, in case the canvas doesn't fill properly */
+}
+
+
+/* Header with fixed position */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 5%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 101; /* Ensure it is above other elements */
+}
+
+.line {
+    width: 30px; /* Width of the lines */
+    height: 4px; /* Height of the lines */
+    background-color: white; /* Line color */
+    margin: 6px 0; /* Space between lines */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Width of the nav menu */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.85); /* Background color */
+    padding: 80px 20px 20px; /* Add more top padding to move buttons lower */
+    transform: translateX(-100%); /* Hide off-screen */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: 100; /* Below the hamburger */
+}
+
+
+.navbar a {
+    display: block; /* Make links block-level for full width */
+    padding: 35px 0; /* Adjust padding for top and bottom */
+    padding-left: 15px; /* Add padding for left */
+    color: white;
+    font-weight: bold;
+	font-family: 'Raleway';
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+    border-radius: 20px;
+    padding-left: 30px; /* Optional: add extra padding for hover effect */
+}
+
+/* Class to show the navbar */
+.navbar.show {
+    transform: translateX(0); /* Slide into view */
+}
+
+/* Logo styles */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 110;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+#hero {
+    font-size: 20px;
+	font-family: 'Raleway';
+	color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px #4169E1, 0 0 20px #4169E1, 0 0 30px #4169E1, 0 0 40px #4169E1;
+    text-align: center;
+    padding: 120px 5% 60px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.contactme {
+    background: linear-gradient(to right, #1a1a1a, black, #1a1a1a);
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px; /* Space between the cards */
+}
+
+
+#hero2 {
+    font-size: 15px;
+    font-family: 'Raleway';
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px #4169E1, 0 0 20px #4169E1, 0 0 30px #4169E1, 0 0 40px #4169E1;
+    text-align: center;
+    padding: 60px 5% 60px; /* Reduce top padding here */
+}
+
+
+#hero2 h1 {
+    font-size: 3em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Prices Section */
+.prices {
+    padding: 80px 10%;
+    background: linear-gradient(to right, #1a1a1a, black, #1a1a1a);
+    text-align: left; /* Align text to the left */
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-start; /* Align the cards to the left */
+    gap: 30px; /* Space between the cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.prices h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.price-card {
+    background: linear-gradient(45deg, #1a1a1a, black, #1a1a1a);
+    font-weight: bold;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    width: 100%;
+    max-width: 1200px; /* Allow the card to grow wider */
+    display: flex;
+    flex-direction: row; /* Keep items side by side */
+    justify-content: space-between; /* Add space between image and text */
+    align-items: center; /* Vertically center the content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.7;
+    word-wrap: break-word;
+}
+
+
+.price-card:hover {
+    transform: translateY(0px);
+    box-shadow: 0 4px 10px white; /* Slightly smaller shadow */
+}
+
+.price-card h3 {
+    font-size: 1.8em;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.price-card p {
+    font-size: 1.1em;
+    color: #ddd;
+    margin-bottom: 20px;
+    white-space: normal; /* Allow paragraph text to break naturally */
+    max-width: 100%; /* Ensure text takes up full width */
+    margin-left: auto;
+    margin-right: auto; /* Center text */
+    word-wrap: break-word; /* Prevent breaking words awkwardly */
+}
+
+.price-card .price {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e2b97b;
+    margin-bottom: 30px;
+}
+
+/* Image inside the price card (left-aligned) */
+.price-card img {
+    width: 400px; /* Increase width of the image */
+    height: 400px; /* Increase height of the image to make it bigger */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+    margin-right: 30px; /* Increase space between the image and text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow around the image */
+}
+
+.price-text {
+    max-width: 100%;         /* Control the width of the text block */
+}
+
+
+/* Call to Action Button */
+.cta-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 'Raleway';
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.cta-btn:hover {
+    background-color: #e5533b;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .navbar a {
+        padding: 20px 0;
+        font-size: 1.2em;
+    }
+
+    #hero {
+        padding: 150px 5% 40px;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .prices {
+        padding: 40px 5%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .price-card {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .price-card img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* For small screens like phones in portrait */
+@media screen and (max-width: 480px) {
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 0.9em;
+    }
+
+    .prices h2 {
+        font-size: 2em;
+    }
+
+    .price-card h3 {
+        font-size: 1.5em;
+    }
+
+    .price-card p {
+        font-size: 1em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}

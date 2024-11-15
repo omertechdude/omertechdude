@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Linking external stylesheet -->
+    <link rel="stylesheet" href="aboutme.css">
+
+    <!-- Linking Google Fonts for Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Meta for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>About Me</title>
+</head>
+<body>
+
+    <!-- Logo with link -->
+    <a href="index.html">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+        </div>
+    </a>
+
+    <!-- Canvas for background effect (e.g., Matrix effect) -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="myprojects.html" class="active">Projects</a>
+            <a href="prices.html">Prices</a>
+        </nav> 
+    </header>
+
+    <!-- Hero Section -->
+    <div id="app">
+        <div id="hero">
+            <!-- Update the title for consistency -->
+            <h1>About Me</h1>
+        </div>
+    </div>
+
+    <!-- Prices Section -->
+    <section id="prices" class="prices">
+        <!-- Portfolio Card -->
+        <div class="price-card">
+            <img src="logo.png" alt="Portfolio Website Image" class="price-image">
+            <div class="price-text">
+                <p>Hi, I'm Omer, a passionate web developer dedicated to creating beautiful and functional websites. I specialize in building responsive, user-friendly web applications that deliver seamless experiences across all devices.</p>
+                
+                <p>Whether it's crafting a stunning user interface, developing custom features, or optimizing performance, I take pride in my ability to blend creativity with technical expertise. My goal is to bring ideas to life through clean, efficient code and innovative design.</p>
+                
+                <p>When I'm not coding, you'll find me exploring new tech trends, experimenting with new programming languages, or working on personal projects to sharpen my skills. I’m always excited to learn and grow as a developer. Let's create something amazing together!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="aboutme.js"></script>
+
+    <footer>
+        &copy; 2024 Omer Tech Dude. All Rights Reserved.
+    </footer>
+</body>
+</html>
