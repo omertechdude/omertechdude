@@ -230,6 +230,7 @@ footer {
         flex-direction: column;
         align-items: center;
         margin-top: 0; /* Removed negative margin */
+        background: black;
     }
 
     .content {
@@ -294,6 +295,10 @@ footer {
     /* Ensure all columns become full-width on small screens */
     [class*="col-"] {
         width: 100%;
+    }
+
+    #matrixCanvas {
+        display: none;
     }
 }
 
