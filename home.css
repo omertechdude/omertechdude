@@ -318,6 +318,8 @@ footer {
 
     .content h1 {
         font-size: 30px;
+        color: white;
+        text-shadow: 0 0 10px #4169E1, 0 0 20px #4169E1, 0 0 30px #4169E1, 0 0 40px #4169E1;
     }
 
     .content h3 {
