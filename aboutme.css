@@ -276,8 +276,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
     .header {
         padding: 20px 5%;
+        background: black;
     }
 
     .navbar {
@@ -291,21 +293,28 @@ footer {
     }
 
     #hero {
-        padding: 150px 5% 40px;
+        padding: 180px 5% 40px; /* Ensure padding on top and bottom */
+        background-color: black; /* Ensure the background is black */
+        min-height: 40vh; /* Ensure it takes up the full viewport height */
+        margin-bottom: 20; /* Remove any margin that might create unwanted space */
+        box-sizing: border-box; /* Ensure padding is included in the height */
     }
 
     #hero h1 {
         font-size: 2.5em;
+        background: black;
     }
 
     #hero p {
         font-size: 1em;
+        
     }
 
     .prices {
         padding: 40px 5%;
         flex-direction: column;
         justify-content: center;
+        margin-top: 0;
     }
 
     .price-card {
@@ -332,10 +341,16 @@ footer {
     footer {
         padding: 10px;
     }
+
+    #matrixCanvas {
+        display: none;
+    }
 }
 
 /* For small screens like phones in portrait */
 @media screen and (max-width: 480px) {
+
+
     #hero h1 {
         font-size: 2em;
     }
@@ -359,5 +374,9 @@ footer {
     .cta-btn {
         font-size: 1em;
         padding: 12px 20px;
+    }
+
+    #matrixCanvas {
+        display: none;
     }
 }
