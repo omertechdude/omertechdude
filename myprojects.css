@@ -277,6 +277,22 @@ footer {
 
 @media screen and (max-width: 768px) {
     #hero {
-        padding: 150px 5% 40px;
+        padding: 180px 5% 40px; /* Ensure padding on top and bottom */
+        background-color: black; /* Ensure the background is black */
+        min-height: 40vh; /* Ensure it takes up the full viewport height */
+        margin-bottom: 20; /* Remove any margin that might create unwanted space */
+        box-sizing: border-box; /* Ensure padding is included in the height */
+    }
+
+
+    .prices {
+        padding: 40px 5%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+    
+    #matrixCanvas {
+        display: none;
     }
 }
