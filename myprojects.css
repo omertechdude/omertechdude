@@ -174,7 +174,7 @@ body {
     margin-top: 100px;
     display: flex;
     justify-content: flex-start; /* Align the cards to the left */
-    gap: 30px; /* Space between the cards */
+    gap: 20px; /* Space between the cards */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
