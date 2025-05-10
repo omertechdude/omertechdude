@@ -194,7 +194,7 @@ body {
     width: 100%;
     max-width: 400px; /* Keeps the width the same */
     display: flex;
-    flex-direction: row; /* Stack items vertically */
+    flex-direction: column; /* Stack items vertically */
     justify-content: flex-start; /* Align items at the top */
     align-items: center; /* Center the content horizontally */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
