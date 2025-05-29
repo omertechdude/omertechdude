@@ -1,84 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Linking external stylesheet -->
-    <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Omer Tech Dude | Full Stack Web Developer</title>
 
-    <!-- Linking Google Fonts for Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Title of the page (SEO important) -->
-<title>Omer Tech Dude - Professional Web Development Services</title>
-
-<!-- Meta Description (Short and concise summary of your page for search engines) -->
-<meta name="description" content="Omer Tech Dude offers professional web development, design, and SEO services to help businesses establish a strong online presence. Get custom websites that drive results.">
-
-<!-- Meta Keywords (SEO keywords for search engines, though less impactful now) -->
-<meta name="keywords" content="web development, custom websites, SEO services, responsive web design, front-end development, back-end development, Omer Tech Dude, website design, web solutions">
-
-<!-- Meta Robots (for controlling search engine crawling and indexing) -->
-<meta name="robots" content="index, follow">
-
-<!-- Canonical link to prevent duplicate content issues -->
-<link rel="canonical" href="https://www.yourwebsite.com">
-
-<!-- Open Graph tags for social media sharing -->
-<meta property="og:title" content="Omer Tech Dude - Web Development & Design">
-<meta property="og:description" content="Expert web development services to create responsive, high-performance websites that help your business grow online.">
-<meta property="og:image" content="https://www.yourwebsite.com/images/logo.png">
-<meta property="og:url" content="https://www.yourwebsite.com">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card meta tags for sharing on Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Omer Tech Dude - Web Development & Design">
-<meta name="twitter:description" content="Get custom, responsive websites with Omer Tech Dude. Tailored web solutions to enhance your online presence.">
-<meta name="twitter:image" content="https://www.yourwebsite.com/images/logo.png">
-
+  <!-- Meta Tags -->
+  <meta name="description" content="Omer Tech Dude – Full Stack Developer Portfolio. I design and build modern, responsive websites and web applications." />
+  <meta name="keywords" content="full stack developer, web developer, portfolio, javascript, react, nodejs, omer tech dude" />
+  <meta name="author" content="Omer Tech Dude" />
+  <meta property="og:title" content="Omer Tech Dude | Full Stack Developer" />
+  <meta property="og:description" content="Explore my projects and see how I can build your next website or web app." />
+  <meta property="og:image" content="your-logo-path.png" />
+  <meta property="og:url" content="https://omertechdude.github.io" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="omertechdudelogofavicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="omertechdudelogofavicon.ico" />
 </head>
-<body>
-    <a href="index.html">
-        <div class="logo">
-            <img src="logo.png" alt="Logo" class="logo-img">
-        </div>
-    </a>
-    
-    <div id="app">
-        <div id="hero"></div>
-    </div>
-<header>
-    <!-- Header section with logo and navigation -->
-    <div class="hamburger" onclick="toggleMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
 
-        <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="myprojects.html">My Projects</a>
-            <a href="prices.html">Prices</a>
-        </nav>        
+<body>
+
+<header>
+  <div class="container header-container">
+    <a href="index.html"><img src="omertechdudelogo.PNG" alt="Omer Tech Dude Logo" class="logo" /></a>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact"><button class="contact-button">Contact Me</button></a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-    <section id="home" class="home">
-        <div class="content">
-            <h3>Welcome to</h3>
-            <h1><span> OMER TECH DUDE<br></span></h1>
-            <p>I specialize in creating professional, high-quality websites tailored to your business needs. Let me help you elevate your online presence and drive growth with a custom website for you!</p>
-        </div>
-        
-        <canvas id="matrixCanvas"></canvas>
-    </section>
+<section class="hero">
+  <img src="hacker.gif" alt="Hero background" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 id="typewriter">OMER TECH DUDE</h1>
+    <p>Need a stunning, fast website? I build full stack web solutions.</p>
+    <a href="#projects" class="btn-primary">See My Work</a>
+  </div>
+</section>
 
-    <script src="index.js"></script>
+<main class="container">
 
-    <footer>
-        &copy; 2024 Omer Tech Dude. All Rights Reserved.
-    </footer>
+  <!-- About Section -->
+  <section id="about" class="info">
+    <h2>About Me</h2>
+    <p>Hi, I’m Omer – a passionate full stack web developer who thrives on turning ideas into reality. With a strong foundation in both front-end and back-end technologies, I specialize in building dynamic, efficient, and accessible websites and applications.</p>
+    <p>I love coding clean, scalable solutions and constantly learning new tools. When I’m not coding, you’ll find me exploring new tech, working on side projects, or helping others learn to code.</p>
+    <p>With a focus on clean code, user-friendly design, and clear communication, I’m here to help you build a website that’s as polished and functional as your vision demands.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="info">
+    <h2>Skills</h2>
+    <div class="skills-columns">
+      <ul>
+        <li><strong>Languages:</strong> HTML5, CSS3, JavaScript, Python</li>
+        <li><strong>Front-End:</strong> JavaScript animations, CSS animations, Responsive Design</li>
+        <li><strong>Back-End:</strong> Node.js (server.js), Contact Forms with Express (Render)</li>
+      </ul>
+      <ul>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+        <li><strong>Other:</strong> Basic Web Accessibility, Basic SEO, DOM Manipulation</li>
+        <li><strong>Deployment:</strong> GitHub Pages, Render</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="info">
+    <h2>Latest Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <a href="https://omertechdude04.github.io/PopcornTime/" target="_blank">
+          <img src="popcorntimelogo.jpg" alt="Popcorn Time screenshot" />
+        </a>
+        <h3>Popcorn Time</h3>
+        <p>A movie discovery site using the TMDB API. Features include favorites, filters by genre and year, carousels, and modals. Built with vanilla JavaScript and fully responsive.</p>
+      </div>
+      <div class="project">
+        <a href="https://www.sellusyourlandnow.com" target="_blank">
+          <img src="sellusyourlandlogo.jpg" alt="Sell Us Your Land screenshot" />
+        </a>
+        <h3>Sell Us Your Land</h3>
+        <p>A clean, mobile-friendly site for a land-buying company. Includes a working contact form with backend integration (Node.js on Render). Optimized for performance and SEO.</p>
+      </div>
+      <div class="project">
+        <a href="https://www.spacekittenstudios.com" target="_blank">
+          <img src="spacekittenstudioslogo.png" alt="Space Kitten Studio logo" />
+        </a>
+        <h3>Space Kitten Studio</h3>
+        <p>A showcase website for a custom costume-making business. Highlights their portfolio of creative work in a visually engaging way. Focus on layout, design, and presentation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="info">
+    <h2>What People Say</h2>
+    <div class="testimonial">
+      <p>"I love it, thank you Omer"</p>
+      <strong>- Rommie Taib, Space Kitten Studio</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Wow, Omer—absolutely beautiful! Thank you so much for everything. You did an excellent job and it was a pleasure working with you. We’ll gladly recommend you."</p>
+      <strong>- Yossi Hacohen, Sell Us Your Land</strong>
+    </div>
+  </section>
+
+ <section id="pricing" class="info pricing-section">
+  <h2>Pricing</h2>
+  <div class="pricing-cards">
+
+    <!-- Starter Bundle -->
+    <div class="pricing-card">
+      <h3>Starter Bundle</h3>
+      <p class="card-icon">💼 What’s Included:</p>
+      <ul class="features">
+        <li>Up to 3 custom-designed pages</li>
+        <li>Fully responsive & mobile-optimized design</li>
+        <li>Integrated contact form with direct email delivery</li>
+        <li>Basic on-page SEO setup</li>
+        <li>Connection to your existing domain</li>
+      </ul>
+      <p class="price-tag">💰 Starting at <strong>$500 USD</strong></p>
+      <p class="note">Perfect for small businesses, personal sites, or simple landing pages.</p>
+    </div>
+
+    <!-- Pro Bundle -->
+    <div class="pricing-card">
+      <h3>Pro Bundle</h3>
+      <p class="card-icon">💼 What’s Included:</p>
+      <ul class="features">
+        <li>Up to 7 professionally designed pages</li>
+        <li>Smooth animations & modern scroll effects</li>
+        <li>Contact form, reviews, and FAQ sections included</li>
+        <li>Fully responsive across all devices</li>
+        <li>Assistance with custom domain setup</li>
+        <li><strong>+ 1 week of free post-launch support</strong></li>
+      </ul>
+      <p class="price-tag">💰 Starting at <strong>$800 USD</strong></p>
+      <p class="note">Great for service providers, creators, and growing brands.</p>
+    </div>
+
+    <!-- Ultimate Bundle -->
+    <div class="pricing-card">
+      <h3>Ultimate Bundle</h3>
+      <p class="card-icon">💼 What’s Included:</p>
+      <ul class="features">
+        <li>Up to 12 uniquely designed pages</li>
+        <li>Custom layout tailored to each page’s purpose</li>
+        <li>Fully responsive & performance-optimized</li>
+        <li>Contact form, reviews, and FAQ sections included</li>
+        <li>Custom 404 error page + branded loading animation</li>
+        <li>Full deployment and domain setup handled for you</li>
+        <li><strong>+ 1 month of free post-launch support</strong></li>
+      </ul>
+      <p class="price-tag">💰 Starting at <strong>$1200 USD</strong></p>
+      <p class="note">Best for businesses or personal brands ready for a complete, professional online presence.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="info">
+    <h2>Contact Me</h2>
+    <div class="contact-buttons-row">
+      <a href="mailto:omertechdude@gmail.com" class="contact-btn" target="_blank">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://wa.me/5203015742" class="contact-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://github.com/omertechdude04" class="contact-btn" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <nav class="footer-nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <p>&copy; 2025 Omer Tech Dude – All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script>
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("transparent", window.scrollY > 50);
+  });
+
+  const titleText = "OMER TECH DUDE";
+  let i = 0;
+  function typeWriter() {
+    if (i < titleText.length) {
+      document.getElementById("typewriter").innerHTML += titleText.charAt(i);
+      i++;
+      setTimeout(typeWriter, 150);
+    }
+  }
+  document.getElementById("typewriter").innerHTML = "";
+  typeWriter();
+</script>
+
 </body>
 </html>
