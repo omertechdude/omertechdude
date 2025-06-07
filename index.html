@@ -177,20 +177,48 @@
 
 
   <!-- Contact -->
-  <section id="contact" class="info">
-    <h2>Contact Me</h2>
-    <div class="contact-buttons-row">
-      <a href="mailto:omertechdude@gmail.com" class="contact-btn" target="_blank">
-        <i class="fas fa-envelope"></i> Email
-      </a>
-      <a href="https://wa.me/5203015742" class="contact-btn" target="_blank">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-      <a href="https://github.com/omertechdude04" class="contact-btn" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-    </div>
-  </section>
+<section id="contact" class="info">
+  <h2>Contact Me</h2>
+
+  <form action="#" method="POST">
+    <label for="first-name">First Name:</label><br>
+    <input type="text" id="first-name" name="first-name" required><br><br>
+
+    <label for="last-name">Last Name:</label><br>
+    <input type="text" id="last-name" name="last-name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <p>Choose a package:</p>
+    <input type="radio" id="starter" name="package" value="Starter" required>
+    <label for="starter">Starter</label><br>
+
+    <input type="radio" id="pro" name="package" value="Pro">
+    <label for="pro">Pro</label><br>
+
+    <input type="radio" id="ultimate" name="package" value="Ultimate">
+    <label for="ultimate">Ultimate</label><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="contact-buttons-row">
+    <a href="mailto:omertechdude@gmail.com" class="contact-btn" target="_blank">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://wa.me/5203015742" class="contact-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="https://github.com/omertechdude04" class="contact-btn" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
+</section>
+
 </main>
 
 <!-- Footer -->
