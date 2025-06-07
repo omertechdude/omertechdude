@@ -376,6 +376,147 @@ main {
   color: #ccc;
 }
 
+/* Contact Section */
+#contact {
+  padding: 80px 20px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Section Heading */
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00bfff;
+}
+
+/* Contact Form Styling */
+#contact form {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  padding: 40px;
+  border-radius: 16px;
+  background: black;
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+/* Input Fields */
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: #cccccc;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: 2px solid #00bfff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Labels */
+#contact form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+/* Radio Buttons */
+#contact form p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#contact form input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #00bfff;
+}
+
+#contact form label[for="starter"],
+#contact form label[for="pro"],
+#contact form label[for="ultimate"] {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 500;
+  color: #cccccc;
+}
+
+/* Textarea */
+#contact form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#contact form button[type="submit"] {
+  width: 50%;
+  padding: 14px;
+  margin: 20px auto 0; 
+  display: block;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+#contact form button[type="submit"]:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/* Contact Buttons */
+.contact-buttons-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: black;
+  transform: translateY(-2px);
+  color: white;
+}
+
+
 
 /* Footer */
 footer {
